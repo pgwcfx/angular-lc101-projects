@@ -1,0 +1,10 @@
+#linkAlignment {
+    text-align: center;
+}
+a {
+    background-color: crimson;
+}
+#favLinksStyle {
+    text-align: center;
+    text-decoration: underline;
+}
