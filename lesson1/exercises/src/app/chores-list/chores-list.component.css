@@ -1,0 +1,11 @@
+.chores {
+    font-family: cursive;
+    font-size: 300%;
+    color: crimson;
+}
+#underlinedHeading {
+    text-decoration: underline;
+}
+#italicizedList {
+    font-style: italic;
+}

@@ -5,11 +5,18 @@ import { Component, OnInit } from '@angular/core';
    templateUrl: './movie-list.component.html',
    styleUrls: ['./movie-list.component.css']
 })
-export class MovieListComponent implements OnInit {
-   movies = ['Toy Story', 'The Shining', 'Sleepless in Seattle', 'The Martian'];
-
-   constructor() { }
-
-   ngOnInit() {
+   export class MovieListComponent implements OnInit {
+      listHeading: string = "Oscar Winners to Watch";
+      movies: string[] = ['Titanic', 'Gladiator', 'Mutiny on the Bounty', 'The Silence of the Lambs'];
+   
+      constructor() { }
+   
+      ngOnInit() { }
+   
    }
-}
+
+   addMovie (newTitle: string) {
+      if(!this.movies.includes(newTitle)){
+         this.movies.push(newTitle);
+      }
+   }
